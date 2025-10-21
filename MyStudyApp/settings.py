@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(6mzczwfo6x)^muce7g66eg)k)b)=&f8*#mp(8du%p_kjef=d9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://kaisaconnect.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://kaisaconnect.onrender.com', '127.0.0.1', 'localhost', '192.169.0.124']
 
 
 # Application definition
@@ -132,10 +132,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = '/home/kaisa/Documents/DjangoProject/staticfiles'
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
 # Default primary key field type
